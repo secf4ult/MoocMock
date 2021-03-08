@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">慕课网</string>
+    <string name="title_home">首页</string>
+    <string name="title_category">分类</string>
+    <string name="title_discovery">发现</string>
+    <string name="title_study">学习</string>
+    <string name="title_account">账号</string>
+    <string name="search_placeholder">Python · Vue · Java</string>
+    <string-array name="tab_layout">
+        <item>推荐</item>
+        <item>免费课</item>
+        <item>实战课</item>
+        <item>金职位</item>
+        <item>专栏</item>
+        <item>教程</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
