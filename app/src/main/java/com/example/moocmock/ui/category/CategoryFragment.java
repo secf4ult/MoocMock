@@ -11,8 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.moocmock.R;
-import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
+
+import io.secf4ult.verticaltablayout.VerticalTabLayout;
+import io.secf4ult.verticaltablayout.VerticalTabLayoutMediator;
 
 public class CategoryFragment extends Fragment {
 
@@ -32,8 +33,8 @@ public class CategoryFragment extends Fragment {
         ViewPager2 viewPager = view.findViewById(R.id.category_viewPager);
         viewPager.setAdapter(new CategoryFragmentCollection(this, categoryDetails));
 
-        TabLayout tabLayout = view.findViewById(R.id.category_tabLayout);
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText(categoryNames[position])).attach();
+        VerticalTabLayout tabLayout = view.findViewById(R.id.category_tabLayout);
+        new VerticalTabLayoutMediator(tabLayout, viewPager, ((tab, position) -> tab.setText(categoryNames[position]))).attach();
     }
 }
 

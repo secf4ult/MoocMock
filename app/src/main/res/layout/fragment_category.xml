@@ -7,14 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.category.CategoryFragment">
 
-    <com.google.android.material.tabs.TabLayout
+    <io.secf4ult.verticaltablayout.VerticalTabLayout
         android:id="@+id/category_tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorFullWidth="false"
         app:tabMode="scrollable" />
 
     <androidx.viewpager2.widget.ViewPager2
@@ -24,7 +21,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/category_tabLayout" />
+        app:layout_constraintStart_toEndOf="@+id/category_tabLayout"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
